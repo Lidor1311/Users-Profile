@@ -24,7 +24,8 @@ namespace UserProfileManager.Context
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-LPNAM40;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=FalseCONNECTION-STRING
+                optionsBuilder.UseSqlServer("Data Source=DESKTOP-LPNAM40;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
+            }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -38,7 +39,7 @@ namespace UserProfileManager.Context
                 entity.Property(e => e.Id).HasColumnName("id");
 
                 entity.Property(e => e.DateOfBirth)
-                    .HasColumnType("date")
+                    .HasMaxLength(100)
                     .HasColumnName("dateOfBirth");
 
                 entity.Property(e => e.Email)
