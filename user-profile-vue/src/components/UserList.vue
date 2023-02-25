@@ -70,7 +70,7 @@ export default {
         img.src = user.image;
         user.image = img.src;
         return user.image;
-        //return URL.createObjectURL(user.image);
+        
       } else {
         return "";
       }

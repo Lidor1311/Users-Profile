@@ -26,7 +26,6 @@
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
-
 }
 
 .form-group {

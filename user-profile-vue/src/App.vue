@@ -20,13 +20,13 @@
 <style>
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 15% auto; 
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%; 
 }
 
-/* The Close Button */
+
 .close {
   color: #aaa;
   float: right;
@@ -47,7 +47,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-right: 10px; /* optional, adjust as needed */
+  margin-right: 10px; 
 }
 
 button:hover {
