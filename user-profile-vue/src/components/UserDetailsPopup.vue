@@ -5,6 +5,7 @@
         <p><strong>Email:</strong> {{ user.email }}</p>
         <p><strong>Date of Birth:</strong> {{ user.dateOfBirth }}</p>
         <img :src="getUserPhotoUrl(user)" alt="User photo" width="100" />
+        <hr>
         <button @click="$emit('close')">Close</button>
       </div>
     </div>
