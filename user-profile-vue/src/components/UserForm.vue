@@ -113,9 +113,11 @@ export default {
         .post("https://localhost:44354/api/userprofile", newUser)
         .then((response) => {
           console.log(response.data);
+          alert("Form submitted successfully!")
         })
         .catch((error) => {
           console.log(error);
+          alert('Error submitting form: ' + error)
         });
         
     },
