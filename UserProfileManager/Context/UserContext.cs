@@ -24,8 +24,7 @@ namespace UserProfileManager.Context
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("CONNECTION-STRING");
-            }
+                optionsBuilder.UseSqlServer("Data Source=DESKTOP-LPNAM40;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=FalseCONNECTION-STRING
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
